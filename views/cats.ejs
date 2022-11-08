@@ -1,0 +1,14 @@
+<html>
+    <link rel="stylesheet" href="/style.css">
+<body>
+    <header>
+        <nav>
+            <h1>EJS Cats</h1>
+        </nav>
+    </header>
+    
+    <% for (var x in gatos) { %>
+        <a href="/detalles/<%=x%>"><img class="<%= gatos[x].name %>" src="<%= gatos[x].imagen %>" alt=""></a>
+    <% } %>
+</body>
+</html>
